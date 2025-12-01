@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <!-- Art Portfolio -->
+        <!-- ArtPortfolio -->
         <div class="project-card">
           <h3>Static Website (Art Portfolio)</h3>
           <p>My first static website showcasing art. The challenge was responsive design and cross-browser compatibility. Learned how to make a visually appealing and accessible layout.</p>
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <!-- Feedback API -->
+        <!-- FeedbackAPI -->
         <div class="project-card">
           <h3>Feedback API</h3>
           <p>A Lambda + API Gateway + DynamoDB project. Debugging async DynamoDB operations was tricky, but I learned to structure serverless APIs effectively.</p>
@@ -51,7 +51,7 @@
           </div>
         </div>
 
-        <!-- AWS Restart Question Bank -->
+        <!-- AWSRestartQB -->
         <div class="project-card">
           <h3>AWS Restart Question Bank</h3>
           <p>Compiled and implemented a question bank for AWS Restart. Challenges included organizing questions by topic and creating a user-friendly interface. Learned to structure educational content effectively.</p>
