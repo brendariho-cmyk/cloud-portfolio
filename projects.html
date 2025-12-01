@@ -118,10 +118,13 @@
 
       <h3>Challenges</h3>
       <ul>
-        <li>Understanding how Lambda handlers actually work</li>
-        <p>“index.handler”, “lambda_function.handler”… I had to learn the naming convention and make sure my file names and handler names matched.</p>
-        <li>Testing with both synchronous and asynchronous invocations</li>
-        <p>Synchronous tests failed at first. This forced me to think like a developer and debug step-by-step instead of guessing.</p>
+        <li>Fixing broken links and image paths</li>
+        <p>My images didn’t show at first, so I learned how relative paths work and how folder structure affects a website.</p>
+        <li>Understanding how versioning and re-uploads work</li>
+        <p>Every change required me to re-upload files. This taught me to manage versions carefully and test each update.</p>
+        <li>Deploying with S3 when things didn’t load</li>
+        <p>At first, my pages weren’t displaying correctly. I had to understand bucket hosting, public access settings, index documents, and MIME types.</p>
+        
       </ul>
 
       <h3>Outcome</h3>
@@ -139,24 +142,62 @@
     <!-- PROJECT 3 -->
     <div class="project-doc-card">
 
-      <h2>Customer Feedback API (Serverless)</h2>
-      <p><strong>Overview:</strong> Built a production-ready API using AWS Lambda, API Gateway, and DynamoDB.</p>
-
+      <h2>Customer Feedback API (Serverless Lambda + API Gateway + DynamoDB)</h2>
+      <p><strong>Overview:</strong> A serverless API that collects customer feedback and stores it securely in DynamoDB.</p>
+      <p>Many small businesses lack a lightweight backend system for collecting feedback without running servers. I built a fully serverless API that receives user input, validates it, and stores it in a DynamoDB table for analysis.</p>
+      
       <h3>Architecture Diagram</h3>
       <img src="images/api.png" alt="API Diagram" class="diagram">
 
       <h3>Services Used</h3>
       <ul>
-        <li>AWS Lambda</li>
-        <li>API Gateway</li>
-        <li>DynamoDB</li>
+        <li>AWS API Gateway | Lambda(Python) | DynamoDB | IAM | CloudWatch | JSON</li>
       </ul>
 
-      <h3>Challenges</h3>
-      <p>Debugging async DynamoDB operations and request/response formatting for API Gateway.</p>
+      <h3>Story</h3>
 
+
+      <p>Every great product needs feedback — and this project taught me how to collect it the cloud-native way.
+
+      I built a serverless Customer Feedback API that lets users send feedback, which is then stored in DynamoDB.
+
+      This was my chance to learn how real companies build backends that:</p>
+
+      <ul>
+      
+         <li>Accept incoming requests</li>
+
+         <li>Validate data</li>
+
+         <li>Write to a database</li>
+
+         <li>Scale automatically</li>
+
+         <li>Stay cost-efficient</li>
+
+      <p>I used:</p>
+      <ul>
+
+         <li>AWS Lambda for the compute</li>
+
+         <li>API Gateway for the endpoint</li>
+
+         <li>DynamoDB for storage</li>
+
+         <li>IAM for secure access</li>
+
+      </ul>
+      
+      <h3>Challenges</h3>
+      <ul>
+        <li>DynamoDB permissions and IAM troubleshooting</li>
+        <p>This was my biggest challenge. My Lambda function ran successfully but didn’t write to the table. I had to troubleshoot IAM roles, policies, and execution logs.</p>
+        <li>Testing with both synchronous and asynchronous invocations</li>
+        <p>Synchronous tests failed at first. This forced me to think like a developer and debug step-by-step instead of guessing.</p>
+      </ul>
+      
       <h3>Outcome</h3>
-      <p>Working REST API for storing, reading, and managing customer feedback.</p>
+      <p>This project demonstrates modern backend development—serverless, event-driven, scalable, and cost-efficient. No servers, no maintenance, and instantly ready for integration with any frontend.</p>
 
       <div class="buttons">
         <a href="https://github.com/brendariho-cmyk/Customer-Feedback-API" class="btn">GitHub Repo</a>
@@ -168,26 +209,31 @@
     <!-- PROJECT 4 -->
     <div class="project-doc-card">
 
-      <h2>AWS Restart Question Bank</h2>
-      <p><strong>Overview:</strong> Built a categorized AWS question bank to help learners prepare for cloud roles.</p>
-
+      <h2>AWS Restart Question Bank (S3 Website + JavaScript App)</h2>
+      <p><strong>Overview:</strong> A lightweight practice tool that helps AWS Restart learners study foundational AWS concepts using simple explanations and analogies.</p>
+      <p>Many AWS Restart trainees in Uganda lack free, accessible study tools for AWS Restart. I created a static practice site powered by JSON, JavaScript, and S3 hosting to make revision easier.</p>
+      
       <h3>Architecture Diagram</h3>
       <img src="images/qb.PNG" alt="QB Website" class="diagram">
 
       <h3>Structure</h3>
       <ul>
-        <li>EC2</li>
-        <li>S3</li>
-        <li>IAM</li>
-        <li>Networking</li>
-        <li>Serverless</li>
+        <li>AWS S3 | IAM | HTML | CSS | JavaScript | JSON | Git | GitHub</li>
       </ul>
 
+      <h3>Story</h3>
+      <p>When I was studying cloud, I noticed one thing:</p>
+      <p>Most beginners struggle not because AWS is hard, but because the explanations online are too complicated.</p>
+      <p>So I created something I wish I had when I started — a simple website with AWS foundational questions explained in plain language, with analogies.</p>
+      <p>I built it for learners in Uganda who may not have access to pricey resources — something lightweight, accessible on any device, and free.</p>
+      
       <h3>Challenges</h3>
       <p>Organizing large sets of questions and designing a clean structure for easy navigation.</p>
+      <p>I had to figure out how to load questions, show answers, and format JSON — all with simple JS.</p>
 
       <h3>Outcome</h3>
       <p>Well-structured revision resource for AWS Restart learners.</p>
+      <p>It can be expanded with search, categories, scoring, and eventually DynamoDB.</p>
 
       <div class="buttons">
         <a href="https://github.com/brendariho-cmyk/aws-restart-question-bank" class="btn">GitHub Repo</a>
