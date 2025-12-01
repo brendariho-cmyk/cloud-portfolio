@@ -170,11 +170,11 @@ nav a {
 
 .intro-card p {
   line-height: 1.6em;
-  color: #ffffff;
 }
 
-
-
+.info-card .section-title {
+  color: #007bff; 
+}
 
 
 
