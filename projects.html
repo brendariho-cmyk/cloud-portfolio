@@ -95,17 +95,16 @@
  <!-- PROJECT 2 -->
  <div class="project-doc-card">
 
-      <h2>Static Website on AWS S3</h2>
-      <p><strong>Overview:</strong> Deployed a static HTML/CSS website on AWS S3 with logging, versioning, and correct public access configuration.</p>
-
+      <h2>Static Art Portfolio Website (S3 Hosting Project)</h2>
+      <p><strong>Overview:</strong> A fully static art portfolio website hosted on Amazon S3.</p>
+      <p>I designed and deployed a simple static website to showcase art and graphic design work. The site loads instantly, works across all devices, and uses AWS S3 static hosting for low-cost, high-durability storage.</p>
+   
       <h3>Architecture Diagram</h3>
       <img src="images/Gallery.PNG" alt="S3 Website" class="diagram">
 
       <h3>Services Used</h3>
       <ul>
-        <li>AWS S3</li>
-        <li>AWS Route 53</li>
-        <li>AWS IAM</li>
+        <li>AWS S3 | HTML | CSS | GitHub</li>
       </ul>
 
       <h3>Steps</h3>
@@ -119,12 +118,14 @@
 
       <h3>Challenges</h3>
       <ul>
-        <li>Solved 403 Access Denied from incorrect bucket permissions</li>
-        <li>Learned correct hosting configuration</li>
+        <li>Understanding how Lambda handlers actually work</li>
+        <p>“index.handler”, “lambda_function.handler”… I had to learn the naming convention and make sure my file names and handler names matched.</p>
+        <li>Testing with both synchronous and asynchronous invocations</li>
+        <p>Synchronous tests failed at first. This forced me to think like a developer and debug step-by-step instead of guessing.</p>
       </ul>
 
       <h3>Outcome</h3>
-      <p>Website deployed successfully and accessible through S3 static hosting URL.</p>
+      <p>This project strengthened my static hosting and frontend fundamentals, proving I can deploy lightweight websites on AWS with proper structure, design, and accessibility.</p>
 
       <div class="buttons">
         <a href="https://github.com/brendariho-cmyk/Secure-Static-Website" class="btn">GitHub Repo</a>
