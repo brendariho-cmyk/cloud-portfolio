@@ -2,7 +2,7 @@
 
 ## **Brenda Ariho — Cloud Portfolio Documentation**
 
-*A project-backed introduction to my journey into cloud engineering.*
+A project-backed introduction to my journey into cloud engineering.
 
 ---
 
