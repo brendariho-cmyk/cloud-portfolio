@@ -1,6 +1,6 @@
 ---
 
-# 🌩️ **Brenda Ariho — Cloud Portfolio Documentation**
+## **Brenda Ariho — Cloud Portfolio Documentation**
 
 *A project-backed introduction to my journey into cloud engineering.*
 
